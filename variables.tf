@@ -5,18 +5,18 @@ variable "aws_region" {
 }
 
 variable "availability_zones" {
-  type        = list(string)
-  default     = ["ap-southeast-1a", "ap-southeast-1b"]
+  type    = list(string)
+  default = ["ap-southeast-1a", "ap-southeast-1b"]
 }
 
 variable "ec2_instance_type" {
-  type        = string
-  default     = "t2.micro"
+  type    = string
+  default = "t2.micro"
 }
 
 variable "github_repo_url" {
-  type        = string
-  default     = "https://github.com/muroyyy/csvc-assignment-php-files.git"
+  type    = string
+  default = "https://github.com/muroyyy/csvc-assignment-php-files.git"
 }
 
 variable "db_username" {
@@ -24,7 +24,7 @@ variable "db_username" {
 }
 
 variable "db_password" {
-  type = string
+  type      = string
   sensitive = true
 }
 
