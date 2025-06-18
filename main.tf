@@ -22,6 +22,7 @@ module "rds" {
   private_subnet_ids = module.vpc.private_subnet_ids
   db_username = var.db_username
   db_password = var.db_password
+  ec2_security_group_id = module.ec2.web_sg_id
 }
 
 module "secrets_manager" {
